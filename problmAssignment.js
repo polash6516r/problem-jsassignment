@@ -26,11 +26,11 @@
      var smallest = friends[0];
      for (i = 0; i < friends.length; i++){
          var length = friends[i];
-         if(length> smallest){
+         if(length< smallest){
              smallest = length;
          }
      }
      return smallest;
 }
 
-  
+  console.log(tinyFriend(["polas", "joi", "riad"]))
