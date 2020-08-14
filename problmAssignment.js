@@ -19,6 +19,26 @@
 
 
  // brickCalculator
+function brickCalculator(height){
+    var brick = 0;
+    if (height <= 10){
+        brick = height * 50;
+    } else if (height <= 20) {
+        var first10floor = 10 * 50;
+        var remaining = heigh - 10;
+        var second10floor = remaining * 100;
+        brick = first10floor + second10floor;
+    } else {
+        var first10floor = 10 * 50;
+        var second10floor = 10 * 100;
+        var remaining = height - 20;
+        var thirtPart = remaining * 300;
+        brick = first10floor + second10floor + thirtPart;
+    }
+    return brick;
+}
+var count = brickCalculator(52);
+console.log(count);
 
 
  //tinyFriend
